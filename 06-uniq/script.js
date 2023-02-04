@@ -8,7 +8,10 @@
 */
 
 function uniq(arr) {
-    // Напишите код здесь
+	const sum = arr.filter((item, index) => {
+		return index === arr.indexOf(item);
+	})
+	return sum;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

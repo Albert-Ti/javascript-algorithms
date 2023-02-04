@@ -9,8 +9,16 @@
  *
 */
 
+let mass = ['а', 'я', 'о', 'ё', 'у', 'ю', 'ы', 'и', 'э', 'е'];
+// console.log(mass.includes('а'))
 function findVowels(str) {
-    // Напишите код здесь
+	let total = 0;
+	for (let i = 0; i < str.length; i++) {
+		if (mass.includes(str[i])) {
+			total += 1;
+		}
+	}
+	return total;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
