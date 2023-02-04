@@ -7,11 +7,15 @@
  * 
 */
 
+// function uniq(arr) {
+// 	const sum = arr.filter((item, index) => {
+// 		return index === arr.indexOf(item);
+// 	})
+// 	return sum;
+// }
+
 function uniq(arr) {
-	const sum = arr.filter((item, index) => {
-		return index === arr.indexOf(item);
-	})
-	return sum;
+	return [...new Set(arr)];
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
