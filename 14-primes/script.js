@@ -7,7 +7,17 @@
 */
 
 function primes(num) {
-    // Напишите код здесь
+	const seive = [];
+	const result = [];
+	for (let i = 2; i <= num; i++) {
+		if (!seive[i]) {
+			result.push(i);
+			for (let j = i * 2; j <= num; j += i) {
+				seive[j] = true;
+			}
+		}
+	}
+	return result;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
