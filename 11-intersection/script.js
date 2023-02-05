@@ -8,8 +8,16 @@
 */
 
 function intersection(arr1, arr2) {
-    // Напишите код здесь
+	const result = [];
+	for (let i = 0; i < arr1.length; i++) {
+		console.log(arr2.indexOf(arr1[i]));
+		if (arr2.indexOf(arr1[i]) !== -1) {
+			result.push(arr1[i]);
+		}
+	}
+	return result;
 }
+
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
